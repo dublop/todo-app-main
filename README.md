@@ -20,7 +20,7 @@ This is a solution to the [Todo app challenge on Frontend Mentor](https://www.fr
 
 ### Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW/hub)
 - Live Site URL: [https://dublop.github.io/todo-app-main/](https://dublop.github.io/todo-app-main/)
 
 ## My process
