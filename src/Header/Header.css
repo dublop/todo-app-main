@@ -1,9 +1,14 @@
 .Header {
-    letter-spacing: 5px;
-    margin-bottom: 20px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 }
-
+.Header h1 {
+    letter-spacing: 10px;
+    font-size: 36px;
+}
 @media (min-width: 700px) {
     .Header{
         width: 50%;

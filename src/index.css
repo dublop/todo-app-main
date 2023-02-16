@@ -8,7 +8,7 @@ body {
   display: grid;
   place-items: center;
   color: #e4e5f1;
-  padding: 60px 0;
+  padding: 80px 0;
   background: url('../public/images/bg-mobile-dark.jpg') #161722 no-repeat;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
