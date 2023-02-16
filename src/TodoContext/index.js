@@ -9,6 +9,20 @@ function TodoProvider(props) {
     const todosLeft = todos.filter(todo => todo.completed === false).length;
     const [showTodos, setShowTodos] = React.useState('All');
 
+    const handleShowTodos = (showTodos, newTodos) => {
+        if(showTodos === 'All') {
+            newTodos = todos;
+          } 
+          else if(showTodos === 'Active') {
+            newTodos = todos.filter(todo => todo.completed === false);
+          } 
+          else if(showTodos === 'Completed') {
+            newTodos = todos.filter(todo => todo.completed === true);
+          } 
+
+          return newTodos;
+    }
+    
     const onClear = () => {
         const newTodos = todos.filter(todo => 
         todo.completed === false
@@ -58,6 +72,7 @@ function TodoProvider(props) {
             addTodo,
             showTodos,
             setShowTodos,
+            handleShowTodos
         }
         }>
             {props.children}

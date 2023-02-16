@@ -15,19 +15,11 @@ function AppUI() {
         onDelete, 
         onComplete,
         showTodos,
-      } = React.useContext(TodoContext);
+        handleShowTodos,
+    } = React.useContext(TodoContext);
    
-      let newTodos;
-
-      if(showTodos === 'All') {
-        newTodos = todos;
-      } 
-      else if(showTodos === 'Active') {
-        newTodos = todos.filter(todo => todo.completed === false);
-      } 
-      else if(showTodos === 'Completed') {
-        newTodos = todos.filter(todo => todo.completed === true);
-      } 
+    let newTodos;
+    newTodos = handleShowTodos(showTodos, newTodos);
 
     return (
         <React.Fragment>
