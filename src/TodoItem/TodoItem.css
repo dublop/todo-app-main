@@ -1,0 +1,48 @@
+.TodoItem {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(235, 24%, 19%);
+    border-bottom: 1px solid #4d5066;
+    padding: 20px 10px;
+    margin: 0 0 0 0;
+}
+li:first-child { 
+    border-radius: 5px 5px 0 0;
+}
+p {
+    margin: 0 0 0 40px;
+    max-width: 200px;
+}
+.Completed {
+    text-decoration:line-through;
+}
+.Icon {
+    display: block;
+    display: grid;
+    place-items: center;
+    border: 1px solid  #393a4c;
+    width: 20px;
+    height: 20px;
+    color: #e4e5f1;
+    border-radius: 50%;
+}
+.Active {
+    background: rgb(58,123,253);
+    background: linear-gradient(90deg, rgba(58,123,253,1) 0%, rgba(87,221,255,1) 35%, rgba(192,88,243,1) 100%);
+    border: 1px solid transparent;
+}
+.Check {
+    width: 10px;
+    height: 10px;
+}
+.Delete {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+.Delete:hover {
+    cursor: pointer;
+}

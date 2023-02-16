@@ -1,0 +1,39 @@
+.InputDiv{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+.Icon {
+    position: absolute;
+    display: inline-block;
+    display: grid;
+    place-items: center;
+    border: 1px solid  #393a4c;
+    top: calc(100% - 38px);
+    left: 15px;
+    width: 20px;
+    height: 20px;
+    color: #e4e5f1;
+    border-radius: 50%;
+}
+.Input {
+    display: inline-block;
+    width: 100%;
+    background-color: hsl(235, 24%, 19%);
+    padding: 0 40px;
+    color: #e4e5f1;
+    border: none;
+    outline: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+}
+
+@media (min-width: 700px) {
+    .InputDiv{
+        width: 50%;
+    }
+}

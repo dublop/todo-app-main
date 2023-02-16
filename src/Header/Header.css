@@ -1,0 +1,11 @@
+.Header {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media (min-width: 700px) {
+    .Header{
+        width: 50%;
+    }
+}
