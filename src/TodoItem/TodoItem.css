@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(235, 24%, 19%);
-    border-bottom: 1px solid #4d5066;
+    background-color: var(--input-div);
+    border-bottom: 1px solid var(--border-bottom);
     padding: 20px 10px;
     margin: 0 0 0 0;
 }
@@ -23,7 +23,7 @@ p {
     display: block;
     display: grid;
     place-items: center;
-    border: 1px solid  #393a4c;
+    border: 1px solid  var(--border);
     width: 20px;
     height: 20px;
     color: #e4e5f1;

@@ -5,11 +5,11 @@
 }
 
 .TodoCount {
-    color: #4d5066;
+    color: var(--border-bottom);
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: hsl(235, 24%, 19%);
+    background-color: var(--input-div);
     padding: 20px 20px;
     border-radius: 0 0 5px 5px ;
 }
@@ -20,7 +20,7 @@
     color: #3a7bfd;
 }
 .ClearComplete:hover {
-    color: #e4e5f1;
+    color: var(--font);
     cursor: pointer;
 }
 .TodoActions {

@@ -1,7 +1,7 @@
 import React from "react";
 import './TodoItem.css';
-import CheckIcon from  "../icons/icon-check.svg";
-import DeleteIcon from  "../icons/icon-cross.svg";
+import CheckIcon from  "../assets/icon-check.svg";
+import DeleteIcon from  "../assets/icon-cross.svg";
 
 function TodoItem(props) {;
     return (

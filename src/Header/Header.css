@@ -4,10 +4,14 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    color: hsl(236, 33%, 92%);
 }
 .Header h1 {
     letter-spacing: 10px;
     font-size: 36px;
+}
+.hidden {
+    display: none;
 }
 @media (min-width: 700px) {
     .Header{
