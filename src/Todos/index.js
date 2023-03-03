@@ -1,10 +1,13 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
 import './Todos.css';
 
-function Todos(props) {
-    const {setShowTodos} = React.useContext(TodoContext);
-
+function Todos({
+    children,
+    setShowTodos,
+    todosTotal,
+    todosLeft,
+    onClear,
+}) {
     const handdleClick = (text) => {
         setShowTodos(text);
     };
@@ -12,13 +15,13 @@ function Todos(props) {
     return (
         <section>
             <ul className="Todo">
-                {props.children}
+                {children}
 
                 <li className="TodoCount">
                     <p className="TodoMargin">
-                        {props.left} items left from {props.total}
+                        {todosLeft} items left from {todosTotal}
                     </p>
-                    <p className="TodoMargin ClearComplete" onClick={props.onClear}>
+                    <p className="TodoMargin ClearComplete" onClick={onClear}>
                         Clear completed
                     </p>
                 </li>

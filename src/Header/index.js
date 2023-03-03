@@ -10,7 +10,7 @@ function Header() {
     let bodyStyles = document.querySelector('body');
     const moon = document.getElementById('moon');
     const sun = document.getElementById('sun');
-    let viewport_width = window.innerWidth;
+    //let viewport_width = window.innerWidth;
     
     
     const toggleIcon = () => {

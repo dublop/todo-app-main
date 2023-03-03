@@ -1,10 +1,9 @@
 import React from "react";
-import { TodoContext } from "../TodoContext";
+import { TodoContext } from "../App/useTodos";
 import './Input.css';
 
-function Input(props) {
+function Input({ addTodo }) {
     const inputRef = React.useRef(null);
-    const {addTodo} = React.useContext(TodoContext);
 
     const searchInput = (e) => {
         if(e.key === 'Enter') {
