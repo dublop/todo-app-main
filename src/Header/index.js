@@ -24,9 +24,6 @@ function Header() {
             rootStyles.style.setProperty('--border', 'hsl(236, 9%, 61%)');
             rootStyles.style.setProperty('--border-bottom', 'hsl(236, 9%, 61%)');
             bodyStyles.style.setProperty ('background-image', `url(${bgDesImgL})`);
-
-
-
         } else {
             rootStyles.style.setProperty('--bg', 'hsl(235, 21%, 11%)');
             rootStyles.style.setProperty('--font', 'hsl(236, 33%, 92%)');
