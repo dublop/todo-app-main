@@ -7,18 +7,13 @@ function useTodos() {
     const todosLeft = todos.filter(todo => todo.completed === false).length;
     const [showTodos, setShowTodos] = React.useState('All');
 
-    const handleShowTodos = (showTodos, newTodos) => {
-        if(showTodos === 'All') {
-            newTodos = todos;
-          } 
-          else if(showTodos === 'Active') {
-            newTodos = todos.filter(todo => todo.completed === false);
-          } 
-          else if(showTodos === 'Completed') {
-            newTodos = todos.filter(todo => todo.completed === true);
-          } 
-
-          return newTodos;
+    const handleShowTodos = () => {
+        const todosToReturn = {
+            All: todos,
+            Active: todos.filter(todo => !todo.completed),
+            Completed: todos.filter(todo => todo.completed),
+        };
+        return todosToReturn[showTodos];
     }
     
     const onClear = () => {

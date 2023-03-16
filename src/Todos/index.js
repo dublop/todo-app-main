@@ -8,9 +8,6 @@ function Todos({
     todosLeft,
     onClear,
 }) {
-    const handdleClick = (text) => {
-        setShowTodos(text);
-    };
 
     return (
         <section>
@@ -28,9 +25,9 @@ function Todos({
 
                 <li className="TodoCount TodoActions">
                     <p className="TodoP">
-                        <a className="All ClearComplete" onClick={() => handdleClick('All')}>All</a>
-                        <a className="ClearComplete" onClick={() => handdleClick('Active')}>Active</a>
-                        <a className="ClearComplete" onClick={() => handdleClick('Completed')}>Completed</a>
+                        <a className="All ClearComplete" onClick={() => setShowTodos('All')}>All</a>
+                        <a className="ClearComplete" onClick={() => setShowTodos('Active')}>Active</a>
+                        <a className="ClearComplete" onClick={() => setShowTodos('Completed')}>Completed</a>
                     </p>
 
                 </li>

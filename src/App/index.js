@@ -19,15 +19,14 @@ function App(props) {
     addTodo,
   } = useTodos();
 
-  let newTodos;
-  newTodos = handleShowTodos(showTodos, newTodos);
+  const newTodos = handleShowTodos();
 
   return (
     <React.Fragment>
     <Header />
     <Input addTodo={addTodo}/>
 
-    <Todos setShowTodos={setShowTodos} todosTotal={todosTotal} todosLeft={todosLeft} onClear={()=> onClear()}>
+    <Todos setShowTodos={setShowTodos} todosTotal={todosTotal} todosLeft={todosLeft} onClear={onClear}>
       {
         newTodos.map(todo => (
           <TodoItem
