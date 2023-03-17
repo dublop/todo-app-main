@@ -1,8 +1,8 @@
-import React from "react";
-import {Header} from "../Header";
-import {Input} from "../Input";
-import {Todos} from "../Todos";
-import {TodoItem} from "../TodoItem";
+import { Fragment } from 'react';
+import { Header } from "../Header";
+import { Input } from "../Input";
+import { Todos } from "../Todos";
+import { TodoItem } from "../TodoItem";
 import { useTodos } from "./useTodos";
 
 function App(props) {
@@ -22,7 +22,7 @@ function App(props) {
   const newTodos = handleShowTodos();
 
   return (
-    <React.Fragment>
+    <Fragment>
     <Header />
     <Input addTodo={addTodo}/>
 
@@ -39,7 +39,7 @@ function App(props) {
         ))
       }
     </Todos>
-    </React.Fragment>
+    </Fragment>
   );
 }
 

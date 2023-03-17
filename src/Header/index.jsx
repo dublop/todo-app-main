@@ -1,4 +1,3 @@
-import React from "react";
 import './Header.css';
 import moonIcon from  "../assets/icon-moon.svg";
 import sunIcon from  "../assets/icon-sun.svg";

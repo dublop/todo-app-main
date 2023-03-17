@@ -1,11 +1,11 @@
-import React from "react";
+import { useState } from "react";
 import { useLocalStorage } from "./useLocalStorage";
 
 function useTodos() {
     const {item: todos, saveItem: setTodos} = useLocalStorage('TODO_APP_MAIN_V1', []);
     const todosTotal = todos.length;
     const todosLeft = todos.filter(todo => todo.completed === false).length;
-    const [showTodos, setShowTodos] = React.useState('All');
+    const [showTodos, setShowTodos] = useState('All');
 
     const handleShowTodos = () => {
         const todosToReturn = {

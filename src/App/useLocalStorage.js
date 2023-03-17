@@ -1,10 +1,9 @@
-import React from "react";
-// 'TODO-APP-MAIN-V1'
+import { useEffect, useState } from "react";
 
 function useLocalStorage(itemName, initialValue) {
-    const [item, setItem] = React.useState(initialValue);
+    const [item, setItem] = useState(initialValue);
 
-    React.useEffect(() => {
+    useEffect(() => {
         try {
             let parsedItem;
             const localStorageItem = localStorage.getItem(itemName);
