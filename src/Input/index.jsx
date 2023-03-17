@@ -13,8 +13,7 @@ function Input({ addTodo }) {
 
     return (
         <div className="InputDiv">
-            <span className={"Icon"}>
-            </span>
+            <span className={"Icon"} />
             <input className="Input"
             ref={inputRef}
             placeholder="Add a new note..."
