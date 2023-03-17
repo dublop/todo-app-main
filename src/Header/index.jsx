@@ -5,12 +5,11 @@ import bgDesImgL from "../assets/images/bg-desktop-light.jpg";
 import bgDesImgD from "../assets/images/bg-desktop-dark.jpg";
 
 function Header() {
-    let rootStyles = document.querySelector(':root');
-    let bodyStyles = document.querySelector('body');
+    const rootStyles = document.querySelector(':root');
+    const bodyStyles = document.querySelector('body');
     const moon = document.getElementById('moon');
     const sun = document.getElementById('sun');
     //let viewport_width = window.innerWidth;
-    
     
     const toggleIcon = () => {
         moon.classList.toggle('hidden');
