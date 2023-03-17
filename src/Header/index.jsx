@@ -9,7 +9,6 @@ function Header() {
     const bodyStyles = document.querySelector('body');
     const moon = document.getElementById('moon');
     const sun = document.getElementById('sun');
-    //let viewport_width = window.innerWidth;
     
     const toggleIcon = () => {
         moon.classList.toggle('hidden');
