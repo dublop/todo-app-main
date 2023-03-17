@@ -7,7 +7,7 @@ function TodoItem(props) {;
         <li className="TodoItem">
             <span className={`Icon ${props.completed ? 'Active' : ""}`}
             onClick={props.onComplete}>
-                {props.completed === true ? <CheckIcon className={"Check"} />: ""}
+                {props.completed === true ? <CheckIcon className="Check" />: ""}
             </span>
 
             <p className={props.completed === true ? 'Completed' : ""}>{props.text}</p>
