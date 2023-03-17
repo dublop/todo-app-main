@@ -1,19 +1,19 @@
 import './TodoItem.css';
-import CheckIcon from  "../assets/icon-check.svg";
-import DeleteIcon from  "../assets/icon-cross.svg";
+import { ReactComponent as  CheckIcon } from  "../assets/icon-check.svg";
+import { ReactComponent as DeleteIcon } from  "../assets/icon-cross.svg";
 
 function TodoItem(props) {;
     return (
         <li className="TodoItem">
-            <span className={`Icon ${props.completed ? 'Active' : undefined}`}
+            <span className={`Icon ${props.completed ? 'Active' : ""}`}
             onClick={props.onComplete}>
-                {props.completed === true ? <img src={CheckIcon} className={"Check"}/> : undefined}
+                {props.completed === true ? <CheckIcon className={"Check"} />: ""}
             </span>
 
-            <p className={props.completed === true ? 'Completed' : undefined}>{props.text}</p>
+            <p className={props.completed === true ? 'Completed' : ""}>{props.text}</p>
             
-            <img src={DeleteIcon} className='Delete' alt='Todo' onClick={props.onDelete} />
-
+            {/*<img src={DeleteIcon} className='Delete' alt='Todo' onClick={props.onDelete} />*/}
+            <DeleteIcon className='Delete' alt='Todo' onClick={props.onDelete} />
         </li>
     );
 }
