@@ -31,6 +31,8 @@ body {
 @media (min-width: 376px) {
   body {
     background: url('./assets/images/bg-desktop-dark.jpg') var(--bg) no-repeat;
+    background-size: cover;
+   height: 300px;
   }
 }
 @media (min-width: 700px) {
